@@ -398,6 +398,7 @@ cc_library {
         "-Wno-unknown-pragmas",
         "-Wno-unused-const-variable",
         "-Wno-unused-variable",
+        "-ffp-contract=fast",
     ],
 
     ldflags: [
@@ -437,10 +438,6 @@ cc_library {
     apex_available: [
         "com.android.runtime",
     ],
-
-    lto: {
-        never: true,
-    },
 }
 
 ndk_library {
